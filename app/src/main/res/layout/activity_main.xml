@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/marginTopBottom"
+    android:fillViewport="true"
+    tools:context="com.example.android.soccercounter.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mainLinearLayoutMargin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/teamNamePaddingTop"
+                    android:text="@string/team_a_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/buttonTextColorLight"
+                    android:textSize="@dimen/teamNameTextSize" />
+
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/scorePaddingTop"
+                    android:text="0"
+                    android:textColor="@color/scoreTextColor"
+                    android:textSize="@dimen/scoreTextSize" />
+
+                <TextView
+                    android:id="@+id/team_a_yellow_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:padding="@dimen/cardNumberPadding"
+                    android:text="0"
+                    android:textColor="@color/yellowCardText"
+                    android:textSize="@dimen/cardNumberTextSize" />
+
+                <TextView
+                    android:id="@+id/team_a_red_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/cardNumberPadding"
+                    android:text="0"
+                    android:textColor="@color/redCardText"
+                    android:textSize="@dimen/cardNumberTextSize" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginTopBottom"
+                    android:layout_marginLeft="@dimen/marginLeftRight"
+                    android:layout_marginRight="@dimen/marginLeftRight"
+                    android:layout_marginTop="@dimen/marginTopBottom"
+                    android:background="@color/goalButton"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="goalForTeamA"
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/goal_button"
+                    android:textAllCaps="true"
+                    android:textColor="@color/buttonTextColorLight"
+                    android:textSize="@dimen/goalButtonTextSize" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginTopBottom"
+                    android:layout_marginLeft="@dimen/marginLeftRight"
+                    android:layout_marginRight="@dimen/marginLeftRight"
+                    android:background="@color/yellowCardButton"
+                    android:onClick="yellowCardForTeamA"
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/yellow_card_button"
+                    android:textAllCaps="true"
+                    android:textColor="@color/buttonTextColorDark"
+                    android:textSize="@dimen/cardButtonTextSize" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeftRight"
+                    android:layout_marginRight="@dimen/marginLeftRight"
+                    android:background="@color/redCardButton"
+                    android:onClick="redCardForTeamA"
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/red_card_button"
+                    android:textAllCaps="true"
+                    android:textColor="@color/buttonTextColorLight"
+                    android:textSize="@dimen/cardButtonTextSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/separatorLineWidth"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/marginTopBottom"
+                android:background="@color/separatorColor" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/teamNamePaddingTop"
+                    android:text="@string/team_b_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/buttonTextColorLight"
+                    android:textSize="@dimen/teamNameTextSize" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/scorePaddingTop"
+                    android:text="0"
+                    android:textColor="@color/scoreTextColor"
+                    android:textSize="@dimen/scoreTextSize" />
+
+                <TextView
+                    android:id="@+id/team_b_yellow_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:padding="@dimen/cardNumberPadding"
+                    android:text="0"
+                    android:textColor="@color/yellowCardText"
+                    android:textSize="@dimen/cardNumberTextSize" />
+
+                <TextView
+                    android:id="@+id/team_b_red_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/cardNumberPadding"
+                    android:text="0"
+                    android:textColor="@color/redCardText"
+                    android:textSize="@dimen/cardNumberTextSize" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginTopBottom"
+                    android:layout_marginLeft="@dimen/marginLeftRight"
+                    android:layout_marginRight="@dimen/marginLeftRight"
+                    android:layout_marginTop="@dimen/marginTopBottom"
+                    android:background="@color/goalButton"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="goalForTeamB"
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/goal_button"
+                    android:textAllCaps="true"
+                    android:textColor="@color/buttonTextColorLight"
+                    android:textSize="@dimen/goalButtonTextSize" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginTopBottom"
+                    android:layout_marginLeft="@dimen/marginLeftRight"
+                    android:layout_marginRight="@dimen/marginLeftRight"
+                    android:background="@color/yellowCardButton"
+                    android:onClick="yellowCardForTeamB"
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/yellow_card_button"
+                    android:textAllCaps="true"
+                    android:textColor="@color/buttonTextColorDark"
+                    android:textSize="@dimen/cardButtonTextSize" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeftRight"
+                    android:layout_marginRight="@dimen/marginLeftRight"
+                    android:background="@color/redCardButton"
+                    android:onClick="redCardForTeamB"
+                    android:padding="@dimen/buttonPadding"
+                    android:text="@string/red_card_button"
+                    android:textAllCaps="true"
+                    android:textColor="@color/buttonTextColorLight"
+                    android:textSize="@dimen/cardButtonTextSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/marginLeftRight"
+            android:layout_marginRight="@dimen/marginLeftRight"
+            android:background="@color/resetButton"
+            android:onClick="resetScore"
+            android:padding="@dimen/buttonPadding"
+            android:text="@string/reset_button"
+            android:textAllCaps="true"
+            android:textColor="@color/buttonTextColorLight"
+            android:textSize="@dimen/resetButtonTextSize" />
+
+    </RelativeLayout>
+
+</ScrollView>

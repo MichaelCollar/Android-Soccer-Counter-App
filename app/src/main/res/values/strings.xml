@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Soccer Counter</string>
+    <string name="team_a_name">Barcelona</string>
+    <string name="team_b_name">Real Madrid</string>
+    <string name="goal_button">Goal!</string>
+    <string name="yellow_card_button">Yellow card</string>
+    <string name="red_card_button">Red card</string>
+    <string name="reset_button">Reset score</string>
+
+</resources>

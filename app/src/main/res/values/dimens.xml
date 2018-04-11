@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="textview_height">25dp</dimen>
+    <dimen name="font_size">16sp</dimen>
+    <dimen name="mainLinearLayoutMargin">64dp</dimen>
+    <dimen name="teamNamePaddingTop">16dp</dimen>
+    <dimen name="scorePaddingTop">24dp</dimen>
+    <dimen name="cardNumberPadding">16dp</dimen>
+    <dimen name="marginTopBottom">16dp</dimen>
+    <dimen name="marginLeftRight">24dp</dimen>
+    <dimen name="buttonPadding">16dp</dimen>
+    <dimen name="scoreTextSize">56sp</dimen>
+    <dimen name="cardNumberTextSize">16sp</dimen>
+    <dimen name="goalButtonTextSize">32sp</dimen>
+    <dimen name="cardButtonTextSize">14sp</dimen>
+    <dimen name="resetButtonTextSize">14sp</dimen>
+    <dimen name="teamNameTextSize">14sp</dimen>
+    <dimen name="separatorLineWidth">1dp</dimen>
+
+</resources>
