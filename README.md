@@ -3,4 +3,4 @@ Simple Counter App that tracks the results of two soccer teams. Created in Andro
 
 Tested on: Nexus 5X, API: 27.
 
-![alt tag](http://cmsweb.pl/wp-content/uploads/2018/04/counter.png "Soccer Counter App")
+<img src="http://cmsweb.pl/wp-content/uploads/2018/04/counter.png" width="320">
